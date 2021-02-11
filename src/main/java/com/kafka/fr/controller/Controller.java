@@ -1,20 +1,20 @@
-package com.leansys.fr.controller;
+package com.kafka.fr.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.leansys.fr.producer.ProducerConfiguration;
+import com.kafka.fr.producer.ProducerConfig;
 
 @RestController
 @RequestMapping(value="/exercice")
-public class ControllerKafkaExercice {
+public class Controller {
 
-	ProducerConfiguration producer; 
+	ProducerConfig producer; 
 	
 	@GetMapping(value = "/kafka")
 	public String sendMessage () {
-		producer.sendTopicFromProducer();
+		producer.sendRecordFromProducer();
 		return "message envoyé";
 	}
 	

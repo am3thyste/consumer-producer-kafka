@@ -1,4 +1,4 @@
-package com.leansys.fr.consumer;
+package com.kafka.fr.consumer;
 
 import java.util.Arrays;
 import java.util.Properties;
@@ -8,7 +8,7 @@ import org.apache.kafka.clients.consumer.KafkaConsumer;
 
 import com.fasterxml.jackson.databind.deser.std.StringDeserializer;
 
-public class ConsumerConfiguration {
+public class ConsumerConfig {
 
 	public void receiveSentMessagesByProducer() {
 		Properties propConsumer = new Properties();
